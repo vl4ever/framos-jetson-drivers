@@ -345,7 +345,7 @@ static ssize_t log_mask_write(struct file *fp, struct kobject *ko,
 	memcpy(&value, buf + sizeof(uint64_t), sizeof(uint64_t));
 
 	if (size == 2 * sizeof(uint64_t))
-		hyp_trace_set_mask(type, value);
+		hyp_trace_set_mask(value);
 	else
 		EventType = *buf;
 
