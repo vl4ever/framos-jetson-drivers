@@ -22,4 +22,6 @@ Module.symvers
 *.mod
 *.cmd
 *mods.dtb*
+source/kernel-devicetree/generic-dts/dtbs/
+source/out/
 
